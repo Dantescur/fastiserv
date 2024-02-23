@@ -1,10 +1,13 @@
 import fCookie from "@fastify/cookie";
-import fjwt, { FastifyJWT } from "@fastify/jwt";
+import "dotenv/config";
+import fjwt, { FastifyJWT, Secret } from "@fastify/jwt";
 import Fastify, { FastifyReply, FastifyRequest } from "fastify";
 import { User, sequelize } from "../config/config";
 import { userRoutes } from "./modules/user/user.route";
 import { userSchemas } from "./modules/user/user.schema";
-import fastify from "fastify";
+
+const MY_SECRET: Secret = process.env.MY_SECRET as Secret;
+const PORT: number = parseInt(process.env.PORT || "3000", 10);
 
 const app = Fastify({
   logger: {
@@ -14,7 +17,7 @@ const app = Fastify({
   },
 });
 
-app.register(fjwt, { secret: "my-secret" });
+app.register(fjwt, { secret: MY_SECRET });
 
 app.decorate(
   "authenticate",
@@ -43,7 +46,7 @@ app.addHook(
 );
 
 app.register(fCookie, {
-  secret: "my-other-secret",
+  secret: process.env.MY_SECRET,
   hook: "preHandler",
 });
 
@@ -70,7 +73,7 @@ async function main() {
   sequelize.sync();
   console.log("Database sync successfully");
   await app.listen({
-    port: 3000,
+    port: PORT,
   });
 }
 
