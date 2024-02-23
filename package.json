@@ -1,0 +1,33 @@
+{
+  "name": "fastserv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "rimraf /dist && tsc -p tsconfig.json",
+    "start": "node dist/src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/jwt": "^8.0.0",
+    "bcrypt": "^5.1.1",
+    "fastify": "^4.26.1",
+    "fastify-zod": "^1.4.0",
+    "pino-pretty": "^10.3.1",
+    "rimraf": "^5.0.5",
+    "sequelize": "^6.37.1",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.11.19",
+    "pkgroll": "^2.0.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
