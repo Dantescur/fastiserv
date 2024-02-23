@@ -10,6 +10,7 @@
   },
   "keywords": [],
   "author": "",
+  "packageManager": "pnpm",
   "license": "ISC",
   "dependencies": {
     "@fastify/cookie": "^9.3.1",
