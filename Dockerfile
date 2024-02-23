@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:20
 WORKDIR /app
 COPY package.json pnpm-lock.yaml tsconfig.json ./
 RUN npm install -g pnpm
