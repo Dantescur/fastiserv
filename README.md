@@ -51,6 +51,13 @@
 ## Features
 
 <code>
+- Fastify Framework: Utilizes Fastify for its high performance and low overhead, making your web services fast and efficient.
+- TypeScript Support: Full TypeScript support for type safety and better development experience.
+- Sequelize ORM: Integrated Sequelize ORM for easy database management and operations.
+- Docker Ready: Comes with a Dockerfile for easy containerization and deployment.
+- Modular Structure: Organized in a modular structure for better maintainability and scalability.
+- JWT Authentication: Built-in JWT authentication for secure access to resources.
+- Environment Configuration: Uses dotenv for easy environment configuration management.
 </code>
 
 ---
