@@ -129,7 +129,7 @@
 
 | File                                                                          | Summary                         |
 | ----------------------------------------------------------------------------- | ------------------------------- |
-| [types.ts](https://github.com/Dantescur/fastiserv/blob/master/utils/types.ts) | <code>► INSERT-TEXT-HERE</code> |
+| [types.ts](https://github.com/Dantescur/fastiserv/blob/master/utils/types.ts) | <code>The types.ts file contains custom type definitions and interfaces used throughout the Fastiserv application. These types include extensions of existing Fastify or JWT library types to integrate more seamlessly with the application's specific needs. It extend Fastify's request and reply objects with custom properties or methods, or define types for user payloads in JWT tokens. This file helps maintain type safety and consistency across the application, making it easier to develop and refactor.</code> |
 
 </details>
 
@@ -137,7 +137,7 @@
 
 | File                                                                             | Summary                         |
 | -------------------------------------------------------------------------------- | ------------------------------- |
-| [config.ts](https://github.com/Dantescur/fastiserv/blob/master/config/config.ts) | <code>► INSERT-TEXT-HERE</code> |
+| [config.ts](https://github.com/Dantescur/fastiserv/blob/master/config/config.ts) | <code>The config.ts file is responsible for configuring and initializing key components of the Fastiserv application, such as the Sequelize ORM. It defines the database connection settings and initializes Sequelize with these settings. Additionally, it defines the User model, specifying its attributes and options according to the application's data structure requirements. This file acts as a central point for database-related configuration, making it easier to manage and update the application's data layer.</code> |
 
 </details>
 
@@ -149,7 +149,7 @@
 
 Ensure you have the following dependencies installed on your system:
 
-- **TypeScript**: `version x.y.z`
+- **TypeScript**: `version 4.5`
 
 ### Installation
 
