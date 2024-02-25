@@ -88,20 +88,31 @@
 
 <details closed><summary>.</summary>
 
-| File                                                                                | Summary                         |
-| ----------------------------------------------------------------------------------- | ------------------------------- |
-| [pnpm-lock.yaml](https://github.com/Dantescur/fastiserv/blob/master/pnpm-lock.yaml) | <code>► INSERT-TEXT-HERE</code> |
-| [Dockerfile](https://github.com/Dantescur/fastiserv/blob/master/Dockerfile)         | <code>► INSERT-TEXT-HERE</code> |
-| [package.json](https://github.com/Dantescur/fastiserv/blob/master/package.json)     | <code>► INSERT-TEXT-HERE</code> |
-| [tsconfig.json](https://github.com/Dantescur/fastiserv/blob/master/tsconfig.json)   | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                | Summary                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [pnpm-lock.yaml](https://github.com/Dantescur/fastiserv/blob/master/pnpm-lock.yaml) | <code> The pnpm-lock.yaml file ensures that the project's dependencies are consistent across installations. It locks the versions of the packages installed, making sure that every install results in the exact same file structure in node_modules across all environments. This file is generated and updated by pnpm when dependencies are installed or updated.</code>                                    |
+| [Dockerfile](https://github.com/Dantescur/fastiserv/blob/master/Dockerfile)         | <code> The Dockerfile specifies the steps to create a Docker container for the project. It uses node:20 as the base image, sets up the working directory at /app, copies the project files, and installs the dependencies using pnpm. It then builds the project and sets the container to expose port 3000, with the command to run the built application.</code>                                             |
+| [package.json](https://github.com/Dantescur/fastiserv/blob/master/package.json)     | <code> The package.json file serves as the heart of the project's configuration, including metadata like the project's name (fastserv), version (1.0.0), and scripts for development, building, and starting the application. It lists both production and development dependencies necessary for the project, such as Fastify, Sequelize, TypeScript, and various utilities and types for development.</code> |
+| [tsconfig.json](https://github.com/Dantescur/fastiserv/blob/master/tsconfig.json)   | <code> </code>                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+The tsconfig.json file configures TypeScript for the project, specifying compiler options such as the ECMAScript target version (es2016), module system (NodeNext), and the output directory for compiled files (dist). It enables strict type-checking options, interop between ES modules and CommonJS, and more, ensuring that the TypeScript compiler understands how to process the project's code.
 
 </details>
 
 <details closed><summary>src</summary>
 
-| File                                                                    | Summary                         |
-| ----------------------------------------------------------------------- | ------------------------------- |
-| [app.ts](https://github.com/Dantescur/fastiserv/blob/master/src/app.ts) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                    | Summary                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [app.ts](https://github.com/Dantescur/fastiserv/blob/master/src/app.ts) | <code> The app.ts file is the main entry point for the FASTISERV application. It sets up and configures the Fastify server, including essential plugins and middleware for security and functionality. Key features include: |
+
+- Environment Configuration: Utilizes dotenv for loading environment variables, including the server's secret key and port number.
+- Fastify Setup: Initializes a Fastify instance with pretty logging enabled for better readability during development.
+- JWT Authentication: Registers the @fastify/jwt plugin for handling JWT-based authentication, including a custom decorator for verifying tokens and a pre-handler hook for setting the JWT instance on requests.
+- Cookie Support: Integrates @fastify/cookie for handling cookies, particularly for storing access tokens.
+- Schema Registration: Dynamically adds user-related JSON schemas for validation.
+- Routes: Sets up a health check endpoint and registers user-related routes with a specific prefix (api/users).
+- Graceful Shutdown: Listens for termination signals to gracefully shut down the server and close the database connection.
+  This file orchestrates the application's core functionality, ensuring that all components work together seamlessly to provide a secure and efficient web service.</code> |
 
 </details>
 
