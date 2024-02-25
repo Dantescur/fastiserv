@@ -5,7 +5,7 @@
     <h1 align="center">FASTISERV</h1>
 </p>
 <p align="center">
-    <em><code>► INSERT-TEXT-HERE</code></em>
+    <em><code>A fastify web server with some basic use case functionalitys</code></em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/Dantescur/fastiserv?style=flat&color=0080ff" alt="license">
@@ -17,7 +17,6 @@
 		<em>Developed with the software and tools below.</em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat&logo=YAML&logoColor=white" alt="YAML">
 	<img src="https://img.shields.io/badge/Sequelize-52B0E7.svg?style=flat&logo=Sequelize&logoColor=white" alt="Sequelize">
 	<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white" alt="TypeScript">
 	<img src="https://img.shields.io/badge/Docker-2496ED.svg?style=flat&logo=Docker&logoColor=white" alt="Docker">
@@ -26,7 +25,7 @@
 </p>
 <hr>
 
-##  Quick Links
+## Quick Links
 
 > - [ Overview](#-overview)
 > - [ Features](#-features)
@@ -43,19 +42,20 @@
 
 ---
 
-##  Overview
+## Overview
 
-<code>► INSERT-TEXT-HERE</code>
-
----
-
-##  Features
-
-<code>► INSERT-TEXT-HERE</code>
+<code>FASTISERV is a modern, fast, and scalable web service framework built on top of Fastify. It leverages TypeScript for type safety, Sequelize for ORM, and Docker for easy deployment and scalability. Designed with simplicity and performance in mind, FASTISERV aims to provide a solid foundation for building efficient web applications and services.</code>
 
 ---
 
-##  Repository Structure
+## Features
+
+<code>
+</code>
+
+---
+
+## Repository Structure
 
 ```sh
 └── fastiserv/
@@ -79,12 +79,12 @@
 
 ---
 
-##  Modules
+## Modules
 
 <details closed><summary>.</summary>
 
 | File                                                                                | Summary                         |
-| ---                                                                                 | ---                             |
+| ----------------------------------------------------------------------------------- | ------------------------------- |
 | [pnpm-lock.yaml](https://github.com/Dantescur/fastiserv/blob/master/pnpm-lock.yaml) | <code>► INSERT-TEXT-HERE</code> |
 | [Dockerfile](https://github.com/Dantescur/fastiserv/blob/master/Dockerfile)         | <code>► INSERT-TEXT-HERE</code> |
 | [package.json](https://github.com/Dantescur/fastiserv/blob/master/package.json)     | <code>► INSERT-TEXT-HERE</code> |
@@ -95,7 +95,7 @@
 <details closed><summary>src</summary>
 
 | File                                                                    | Summary                         |
-| ---                                                                     | ---                             |
+| ----------------------------------------------------------------------- | ------------------------------- |
 | [app.ts](https://github.com/Dantescur/fastiserv/blob/master/src/app.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
@@ -103,7 +103,7 @@
 <details closed><summary>src.modules.user</summary>
 
 | File                                                                                                         | Summary                         |
-| ---                                                                                                          | ---                             |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------- |
 | [user.route.ts](https://github.com/Dantescur/fastiserv/blob/master/src/modules/user/user.route.ts)           | <code>► INSERT-TEXT-HERE</code> |
 | [user.schema.ts](https://github.com/Dantescur/fastiserv/blob/master/src/modules/user/user.schema.ts)         | <code>► INSERT-TEXT-HERE</code> |
 | [user.controller.ts](https://github.com/Dantescur/fastiserv/blob/master/src/modules/user/user.controller.ts) | <code>► INSERT-TEXT-HERE</code> |
@@ -113,7 +113,7 @@
 <details closed><summary>utils</summary>
 
 | File                                                                          | Summary                         |
-| ---                                                                           | ---                             |
+| ----------------------------------------------------------------------------- | ------------------------------- |
 | [types.ts](https://github.com/Dantescur/fastiserv/blob/master/utils/types.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
@@ -121,22 +121,22 @@
 <details closed><summary>config</summary>
 
 | File                                                                             | Summary                         |
-| ---                                                                              | ---                             |
+| -------------------------------------------------------------------------------- | ------------------------------- |
 | [config.ts](https://github.com/Dantescur/fastiserv/blob/master/config/config.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 ---
 
-##  Getting Started
+## Getting Started
 
-***Requirements***
+**_Requirements_**
 
 Ensure you have the following dependencies installed on your system:
 
-* **TypeScript**: `version x.y.z`
+- **TypeScript**: `version x.y.z`
 
-###  Installation
+### Installation
 
 1. Clone the fastiserv repository:
 
@@ -156,15 +156,15 @@ cd fastiserv
 npm install
 ```
 
-###  Running `fastiserv`
+### Running `fastiserv`
 
 Use the following command to run fastiserv:
 
 ```sh
-npm run build && node dist/main.js
+npm run build && node dist/src/app.js
 ```
 
-###  Tests
+### Tests
 
 Use the following command to run tests:
 
@@ -174,15 +174,15 @@ npm test
 
 ---
 
-##  Project Roadmap
+## Project Roadmap
 
-- [X] `► INSERT-TASK-1`
+- [x] `► INSERT-TASK-1`
 - [ ] `► INSERT-TASK-2`
 - [ ] `► ...`
 
 ---
 
-##  Contributing
+## Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 
@@ -219,13 +219,13 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ---
 
-##  License
+## License
 
 This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
 ---
 
-##  Acknowledgments
+## Acknowledgments
 
 - List any resources, contributors, inspiration, etc. here.
 
