@@ -7,7 +7,7 @@ import { userRoutes } from "./modules/user/user.route";
 import { userSchemas } from "./modules/user/user.schema";
 
 const MY_SECRET: Secret = process.env.MY_SECRET as Secret;
-const PORT: number = parseInt(process.env.PORT || "3000", 10);
+const PORT: number = parseInt(process.env.PORT || "8080", 10);
 
 const app = Fastify({
   logger: {
@@ -73,6 +73,7 @@ async function main() {
   sequelize.sync();
   console.log("Database sync successfully");
   await app.listen({
+    host: "0.0.0.0",
     port: PORT,
   });
 }
