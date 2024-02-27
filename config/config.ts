@@ -1,9 +1,19 @@
-import { type } from "os";
 import { Sequelize, DataTypes, Model } from "sequelize";
+import "dotenv/config";
 
 const sequelize = new Sequelize({
-  dialect: "sqlite",
-  storage: "database_development.sqlite",
+  dialect: "postgres",
+  host: process.env.POSTGRES_HOST || "127.0.0.1",
+  port: 5432,
+  username: process.env.POSTGRES_USER || "fastiserv",
+  password: process.env.POSTGRES_PASS || "Kilo2022*",
+  database: process.env.POSTGRES_DB || "fastiserv",
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
 });
 
 interface IUserAttributes {

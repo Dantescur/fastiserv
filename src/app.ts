@@ -70,7 +70,9 @@ listeners.forEach((signal) => {
 });
 
 async function main() {
-  sequelize.sync();
+  sequelize.sync({
+    logging: false,
+  });
   console.log("Database sync successfully");
   await app.listen({
     host: "0.0.0.0",
